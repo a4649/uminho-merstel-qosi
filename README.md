@@ -10,4 +10,5 @@ Results to be exported per measurement:
   - isp (as-number?) 
   - type of connection (mobile data/wifi/ethernet)
   - type of devide (computer/vm/smartphone)
-  - datetime
+  - date
+  - hour
