@@ -11,7 +11,7 @@ Results to be exported per measurement:
   - target (azure/aws/ibm/gogle)
   - isp (as-number?) 
   - device type of connection (mobile data/wifi/ethernet)
-  - device type of devide (computer/vm/smartphone)
+  - type of device (computer/vm/smartphone)
   - device operating system (linux,windows,macos,android,iphone)
   - date
   - hour
