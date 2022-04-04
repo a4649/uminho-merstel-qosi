@@ -1,6 +1,9 @@
 # QoSI
 Qualidade de Serviço em Redes IP / Internet
 
+Avaliação intermedia: 28 de Abril
+Avaliação final: 19 de Maio
+
 Results to be exported per measurement:
   - latency (https://pypi.org/project/icmplib/)
   - jitter (https://pypi.org/project/icmplib/) 
