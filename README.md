@@ -8,7 +8,8 @@ Results to be exported per measurement:
   - upload (https://iperf3-python.readthedocs.io/en/latest/examples.html#client)
   - target (azure/aws/ibm/gogle)
   - isp (as-number?) 
-  - type of connection (mobile data/wifi/ethernet)
-  - type of devide (computer/vm/smartphone)
+  - device type of connection (mobile data/wifi/ethernet)
+  - device type of devide (computer/vm/smartphone)
+  - device operating system (linux,windows,macos,android,iphone)
   - date
   - hour
