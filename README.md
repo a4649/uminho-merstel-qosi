@@ -18,3 +18,9 @@ Results to be exported per measurement:
   - device operating system (linux,windows,macos,android,iphone)
   - date
   - hour
+
+Cloud Virtual Machines:
+  - Amazon AWS: 3.72.236.111
+  - Azure:
+  - Google:
+  - IBM:
