@@ -24,3 +24,6 @@ Cloud Virtual Machines:
   - Azure:
   - Google:
   - IBM:
+
+Instructions to create virtual machine in cloud:
+```sudo yum install iperf3```
