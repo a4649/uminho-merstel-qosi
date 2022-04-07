@@ -12,8 +12,7 @@ Results to be exported per measurement:
   - upload (https://iperf3-python.readthedocs.io/en/latest/examples.html#client)
   - target (azure/aws/ibm/gogle)
   - isp (as-number?) 
-  - device type of connection (mobile data/wifi/ethernet)
-  - type of device (computer/smartphone)
+  - device type of connection (mobile data/wifi/ethernet) ????
   - device operating system (linux,windows,macos,android,iphone)
   - date
   - hour
@@ -46,6 +45,9 @@ Copy the file:
 ```sudo cp QoSI/iperf.service /etc/systemd/system/```
 
 Reload and start service:
+
 ```sudo systemctl daemon-reload```
+
 ```sudo systemctl enable iperf```
+
 ```sudo systemctl start iperf```
