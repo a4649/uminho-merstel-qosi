@@ -25,5 +25,18 @@ Cloud Virtual Machines (UK/London region):
   - Google:
   - IBM:
 
-Instructions to create virtual machine in cloud:
-```sudo yum install iperf3```
+# Instructions to create virtual machine in cloud:
+
+Install iperf3 on vm:
+```sudo yum install iperf3 git```
+
+Clone this git repository:
+```git clone https://github.com/pg45517/QoSI/```
+
+Copy the file:
+```sudo cp ```
+
+Reload and start service:
+```sudo systemctl daemon-reload```
+```sudo systemctl enable iperf```
+```sudo systemctl start iperf```
