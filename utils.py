@@ -46,3 +46,9 @@ def run_iperf(target):
     except Exception as err:
         print(err)
     return results
+
+def send_results(data_dict):
+    for key, value in data_dict.items():
+        print(key, value)
+        return True
+    return False
