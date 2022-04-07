@@ -25,7 +25,7 @@ Cloud Virtual Machines (UK/London region):
   - Google:
   - IBM:
 
-# Instructions to create virtual machine in cloud:
+## Instructions to create virtual machine in cloud:
 
 Install iperf3 on vm:
 ```sudo yum install iperf3 git```
