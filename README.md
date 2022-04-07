@@ -18,8 +18,8 @@ Results to be exported per measurement:
   - date
   - hour
 
-Cloud Virtual Machines:
-  - Amazon AWS: 3.72.236.111
+Cloud Virtual Machines (UK/London region):
+  - Amazon AWS: 13.40.241.112
   - Alibaba Cloud: 8.208.103.146
   - Azure:
   - Google:
