@@ -31,10 +31,10 @@ Install iperf3 on vm:
 ```sudo yum install iperf3 git```
 
 Clone this git repository:
-```git clone https://github.com/pg45517/QoSI/```
+```git clone https://github.com/pg45517/QoSI.git```
 
 Copy the file:
-```sudo cp ```
+```sudo cp /etc/systemd/system/```
 
 Reload and start service:
 ```sudo systemctl daemon-reload```
