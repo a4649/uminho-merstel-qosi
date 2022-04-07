@@ -33,7 +33,7 @@ Specifications:
   - Name: qosi-vm
   - Add firewall rule: reply ICMP and TCP port 5201
 
-## Instructions to create virtual machine in cloud:
+## Instructions to configure virtual machine:
 
 Install iperf3 on vm:
 ```sudo yum install iperf3 git```
