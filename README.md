@@ -25,6 +25,15 @@ Cloud Virtual Machines (UK/London region):
   - Google:
   - IBM:
 
+## Notes to create virtual machine in cloud:
+Specifications:
+  - 1GB of memory
+  - 1 CPU
+  - Region/Location: London/UK
+  - OS: CentOS8
+  - Name: qosi-vm
+  - Add firewall rule: reply ICMP and TCP port 5201
+
 ## Instructions to create virtual machine in cloud:
 
 Install iperf3 on vm:
@@ -34,7 +43,7 @@ Clone this git repository:
 ```git clone https://github.com/pg45517/QoSI.git```
 
 Copy the file:
-```sudo cp /etc/systemd/system/```
+```sudo cp QoSI/iperf.service /etc/systemd/system/```
 
 Reload and start service:
 ```sudo systemctl daemon-reload```
