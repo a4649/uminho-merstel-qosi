@@ -46,7 +46,7 @@ Download this repository as zip file and extract it:
 ```https://github.com/pg45517/QoSI```
 
 Copy the file:
-```sudo cp QoSI/iperf.service /etc/systemd/system/```
+```sudo cp QoSI-main/iperf.service /etc/systemd/system/```
 
 Reload and start service:
 
