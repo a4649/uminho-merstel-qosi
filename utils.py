@@ -5,6 +5,14 @@ import iperf3
 from datetime import datetime
 from icmplib import ping, exceptions
 
+def get_targets():
+    tkey = {"token_key":"Aeco9H382YPq"}
+    try:
+        x = requests.post('http://18.169.204.30:8888/targets', json = tkey)
+        return json.loads(x.text)
+    except Exception as ex:
+        return False
+
 def get_isp():
     try:
         req = requests.get('https://ipinfo.io')
@@ -13,7 +21,6 @@ def get_isp():
     except Exception as err:
         print(err)
         
-
 def get_date():
     return datetime.today().strftime("%d-%m-%Y")
 
@@ -48,7 +55,14 @@ def run_iperf(target):
     return results
 
 def send_results(data_dict):
-    for key, value in data_dict.items():
-        print(key, value)
+    data_dict['token_key'] = 'Aeco9H382YPq'
+    res = ''
+    try:
+        x = requests.post('http://18.169.204.30:8888/submit', json = data_dict)
+        res = json.loads(x.text)
+    except Exception as ex:
+        return False
+    if res:
         return True
-    return False
+    else:
+        return False
