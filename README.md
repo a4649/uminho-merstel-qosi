@@ -51,3 +51,10 @@ Reload and start service:
 ```sudo systemctl enable iperf```
 
 ```sudo systemctl start iperf```
+
+## Download real time measurements results:
+
+Linux command:
+
+```curl -X POST http://18.169.204.30:8888/download -H 'Content-Type: application/json' -d '{"token_key":"Aeco9H382YPq"}' --output results.csv```
+
