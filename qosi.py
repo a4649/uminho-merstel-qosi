@@ -15,7 +15,6 @@ def main():
     print(measurement['isp'])
     measurement['os'] = utils.get_os()
     print(measurement['os'])
-
     #print(targets)
     
     for target, addr in targets.items():
