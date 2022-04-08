@@ -12,7 +12,6 @@ Results to be exported per measurement:
   - upload
   - target (azure/aws/ibm/google/alibaba)
   - isp
-  - device type of connection (mobile data/wifi/ethernet) ????
   - device operating system (linux,windows,macos,android,iphone)
   - date
   - hour
@@ -24,8 +23,7 @@ Cloud Virtual Machines (UK/London region):
   - Google:
   - IBM:
 
-## Notes to create virtual machine in cloud:
-Specifications:
+## Specs to create virtual machines in clouds
   - 1GB of memory
   - 1 CPU
   - Region/Location: London/UK
@@ -33,13 +31,19 @@ Specifications:
   - Name: qosi-vm
   - Add firewall rule: reply ICMP and TCP port 5201
 
-## Instructions to configure virtual machine:
+## Instructions to configure virtual machine
 
-Install iperf3 on vm:
-```sudo yum install iperf3 git```
+Replace old CentOS 8 repositories:
 
-Clone this git repository:
-```git clone https://github.com/pg45517/QoSI.git```
+```sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*```
+```sed -i 's|#baseurl=http://vault.centos.org|baseurl=http://mirror.centos.org|g' /etc/yum.repos.d/CentOS-*```
+
+
+Install iperf3:
+```sudo yum install iperf3```
+
+Download this repository as zip file and extract it:
+```https://github.com/pg45517/QoSI```
 
 Copy the file:
 ```sudo cp QoSI/iperf.service /etc/systemd/system/```
