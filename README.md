@@ -43,7 +43,7 @@ Replace old CentOS 8 repositories:
 Install iperf3:
 ```sudo yum install iperf3```
 
-Download this repository as zip file and extract it:
+Download this repository as zip file and extract it
 ```https://github.com/pg45517/QoSI```
 
 Copy the file:
