@@ -44,7 +44,7 @@ Install iperf3:
 ```sudo yum install iperf3```
 
 Download this repository as zip file and extract it
-```https://github.com/pg45517/QoSI```
+```https://github.com/pg45517/QoSI/archive/refs/heads/main.zip```
 
 Copy the file:
 ```sudo cp QoSI-main/iperf.service /etc/systemd/system/```
