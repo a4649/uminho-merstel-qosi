@@ -12,7 +12,7 @@ Results to be exported per measurement:
   - upload
   - target (azure/aws/ibm/google/alibaba)
   - isp
-  - device operating system (linux,windows,macos,android,iphone)
+  - device operating system (linux,windows,macos,android,iphone) iperf3 python library not works on Windows!
   - date
   - hour
 
