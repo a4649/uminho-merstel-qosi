@@ -48,8 +48,8 @@ def run_iperf(target):
         client = iperf3.Client()
         client.server_hostname = target
         test = client.run()
-        results['download'] = "{:.2f}".format(test.received_MB_s)
-        results['upload'] = "{:.2f}".format(test.sent_MB_s)
+        results['download'] = "{:.2f}".format(test.received_Mbps)
+        results['upload'] = "{:.2f}".format(test.sent_Mbps)
     except Exception as err:
         print(err)
     return results
