@@ -65,10 +65,12 @@ Linux command:
 
 ## How To Run the tool
 
-First, install requirements:
+Download the code, enter th folder with code and then
+
+1. Install requirements:
 
 ```./install.sh```
 
-Run the tool:
+2. Run python script:
 
 ```python qosi.py```
