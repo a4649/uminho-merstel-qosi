@@ -19,7 +19,7 @@ Results to be exported per measurement:
 Cloud Virtual Machines (UK/London region):
   - Amazon AWS: 13.40.241.112
   - Alibaba Cloud: 8.208.103.146
-  - Azure:
+  - Azure: 51.142.248.75 
   - Google:
   - IBM:
 
