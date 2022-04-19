@@ -73,4 +73,4 @@ Download the code, enter th folder with code and then
 
 2. Run python script:
 
-```python qosi.py```
+```sudo python3 qosi.py```
