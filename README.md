@@ -33,15 +33,14 @@ Cloud Virtual Machines (UK/London region):
 
 ## Instructions to configure virtual machine
 
-Replace old CentOS 8 repositories:
+Install iperf3:
+```sudo yum install iperf3```
+
+If you cannot install software with yum, replace old CentOS 8 repositories:
 
 ```sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*```
 
 ```sed -i 's|#baseurl=http://vault.centos.org|baseurl=http://mirror.centos.org|g' /etc/yum.repos.d/CentOS-*```
-
-
-Install iperf3:
-```sudo yum install iperf3```
 
 Download this repository as zip file and extract it
 ```https://github.com/pg45517/QoSI/archive/refs/heads/main.zip```
