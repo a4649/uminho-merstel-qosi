@@ -5,13 +5,13 @@ Avaliação intermedia: 28 de Abril
 Avaliação final: 19 de Maio
 
 Results to be exported per measurement:
-  - latency
-  - jitter
-  - packet loss
-  - download
-  - upload
+  - latency (ms)
+  - jitter (ms)
+  - packet loss (%)
+  - download (Mbps)
+  - upload (Mbps)
   - target (azure/aws/ibm/google/alibaba)
-  - isp
+  - isp (ASN)
   - device operating system (linux,windows,macos,android,iphone) iperf3 python library not works on Windows!
   - date
   - hour
