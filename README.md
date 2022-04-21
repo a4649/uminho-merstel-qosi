@@ -68,7 +68,7 @@ Download the code, enter th folder with code and then
 
 1. Install requirements:
 
-```./install.sh```
+```sudo ./install.sh```
 
 2. Run python script:
 
