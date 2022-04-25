@@ -64,7 +64,7 @@ Linux command:
 
 ## How To Run the tool
 
-Download the code, enter th folder with code and then
+Download the code, enter the folder with code and then
 
 1. Install requirements:
 
