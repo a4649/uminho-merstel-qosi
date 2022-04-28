@@ -87,10 +87,13 @@ Linux command:
 1. Download the code through web browser
 
 2. Enter the folder with code
+3. 
 ```cd QoSI-main```
 
 3. Install requirements:
+4. 
 ```install.bat```
 
 4. Run python script:
+5. 
 ```python qosi.py```
