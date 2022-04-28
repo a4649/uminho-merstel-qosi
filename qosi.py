@@ -33,7 +33,10 @@ def main():
             return
 
         print('Starting bandwidth measurement to {}'.format(target))
-        iperf = utils.run_iperf(addr)
+        if utils.get_os() == 'Windows':
+            iperf = utils.run_iperf_windows(addr)
+        else:
+            iperf = utils.run_iperf(addr)
         if iperf:
             measurement['download'] = iperf['download']
             print('Download: {}Mbps'.format(measurement['download']))
