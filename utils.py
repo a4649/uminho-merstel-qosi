@@ -1,4 +1,5 @@
 import requests
+import subprocess
 import json
 import platform
 import iperf3
@@ -50,6 +51,17 @@ def run_iperf(target):
         test = client.run()
         results['download'] = "{:.2f}".format(test.received_Mbps)
         results['upload'] = "{:.2f}".format(test.sent_Mbps)
+    except Exception as err:
+        print(err)
+    return results
+
+def run_iperf_windows(target):
+    results = {}
+    try:
+        output = subprocess.getoutput('iperf3.exe --json -c ' + target)
+        tmp = json.loads(output)
+        results['download'] = "{:.2f}".format(int(tmp['end']['sum_sent']['bits_per_second']) / 1000000)
+        results['upload'] = "{:.2f}".format(int(tmp['end']['sum_received']['bits_per_second']) / 1000000)
     except Exception as err:
         print(err)
     return results
