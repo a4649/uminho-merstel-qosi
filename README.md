@@ -62,14 +62,35 @@ Linux command:
 
 ```curl -X POST http://18.169.204.30:8888/download -H 'Content-Type: application/json' -d '{"token_key":"Aeco9H382YPq"}' --output results.csv```
 
-## How To Run the tool
+## How To Run the tool (Linux/MacOS)
 
-Download the code, enter the folder with code and then
+1. Download the code through web browser
 
-1. Install requirements:
+2. Unzip folder
+
+```unzip QoSI-main.zip```
+
+3. Enter folder folder
+
+```cd QoSI-main```
+
+4. Install requirements:
 
 ```sudo ./install.sh```
 
-2. Run python script:
+5. Run the tool:
 
 ```sudo python3 qosi.py```
+
+## How To Run the tool (Windows)
+
+1. Download the code through web browser
+
+2. Enter the folder with code
+```cd QoSI-main```
+
+3. Install requirements:
+```install.bat```
+
+4. Run python script:
+```python qosi.py```
