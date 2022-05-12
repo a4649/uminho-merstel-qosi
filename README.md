@@ -25,7 +25,7 @@ Cloud Virtual Machines (UK/London region):
 
 ## Specs to create virtual machines in clouds
   - 1GB of memory
-  - 1 CPU
+  - 1 CPU (except Google - 2 CPU) 
   - Region/Location: London/UK
   - OS: CentOS8
   - Name: qosi-vm
