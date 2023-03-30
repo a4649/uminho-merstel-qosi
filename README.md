@@ -1,12 +1,15 @@
-# QoSI
-Qualidade de Serviço em Redes IP / Internet 
+# Quality of Service in IP Networks
+
+Exercises and projects developed during the uality of Service in IP Networks curricular unit of the Engineering of Computer Networks and Telematic Services from School of Engineering, University of Minho
 
 https://www.eng.uminho.pt/en/study/_layouts/15/UMinho.PortaisUOEI.UI/Pages/CatalogoCursoDetail.aspx?itemId=3929&catId=12
 
-Avaliação intermedia: 28 de Abril
-Avaliação final: 19 de Maio
+This project aims to assess the quality of connection from the main Portuguese ISPs to the largest public cloud providers on the internet.
+An active monitoring tool was developed to run measurements on personal computers against virtual machines located in the different cloud providers. 
+During one month different metrics were collected and the conclusions shows which ISP and cloud providers has the best metrics results
 
-Results to be exported per measurement:
+
+Data collected per measurement:
   - latency (ms)
   - jitter (ms)
   - packet loss (%)
@@ -19,13 +22,12 @@ Results to be exported per measurement:
   - hour
 
 Cloud Virtual Machines (UK/London region):
-  - Amazon AWS: 13.40.241.112
-  - Alibaba Cloud: 8.208.103.146
-  - Azure: 51.142.248.75 
-  - Google: 35.214.121.83
-  - IBM:
-
-## Specs to create virtual machines in clouds
+  - Amazon AWS
+  - Alibaba Cloud
+  - Azure 
+  - Google
+ 
+VMs specs (Free tier)
   - 1GB of memory
   - 1 CPU (except Google - 2 CPU) 
   - Region/Location: London/UK
@@ -33,38 +35,8 @@ Cloud Virtual Machines (UK/London region):
   - Name: qosi-vm
   - Add firewall rule: reply ICMP and TCP port 5201
 
-## Instructions to configure virtual machine
 
-Install iperf3:
-```sudo yum install iperf3```
-
-If you cannot install software with yum, replace old CentOS 8 repositories:
-
-```sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*```
-
-```sed -i 's|#baseurl=http://vault.centos.org|baseurl=http://mirror.centos.org|g' /etc/yum.repos.d/CentOS-*```
-
-Download this repository as zip file and extract it
-```https://github.com/pg45517/QoSI/archive/refs/heads/main.zip```
-
-Copy the file:
-```sudo cp QoSI-main/iperf.service /etc/systemd/system/```
-
-Reload and start service:
-
-```sudo systemctl daemon-reload```
-
-```sudo systemctl enable iperf```
-
-```sudo systemctl start iperf```
-
-## Download real time measurements results:
-
-Linux command:
-
-```curl -X POST http://18.169.204.30:8888/download -H 'Content-Type: application/json' -d '{"token_key":"Aeco9H382YPq"}' --output results.csv```
-
-## How To Run the tool (Linux/MacOS)
+Run the tool (Linux/MacOS)
 
 1. Download the code through web browser
 
@@ -84,7 +56,7 @@ Linux command:
 
 ```sudo python3 qosi.py```
 
-## How To Run the tool (Windows)
+Run the tool (Windows)
 
 1. Download the code through web browser
 
