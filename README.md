@@ -1,5 +1,7 @@
 # QoSI
-Qualidade de Serviço em Redes IP / Internet
+Qualidade de Serviço em Redes IP / Internet 
+
+https://www.eng.uminho.pt/en/study/_layouts/15/UMinho.PortaisUOEI.UI/Pages/CatalogoCursoDetail.aspx?itemId=3929&catId=12
 
 Avaliação intermedia: 28 de Abril
 Avaliação final: 19 de Maio
