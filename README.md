@@ -4,6 +4,8 @@ Exercises and projects developed during the uality of Service in IP Networks cur
 
 https://www.eng.uminho.pt/en/study/_layouts/15/UMinho.PortaisUOEI.UI/Pages/CatalogoCursoDetail.aspx?itemId=3929&catId=12
 
+![diagram](tool_arch.png)
+
 This project aims to assess the quality of connection from the main Portuguese ISPs to the largest public cloud providers on the internet.
 An active monitoring tool was developed to run measurements on personal computers against virtual machines located in the different cloud providers. 
 During one month different metrics were collected and the conclusions shows which ISP and cloud providers has the best metrics results
